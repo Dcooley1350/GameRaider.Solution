@@ -23,6 +23,8 @@ namespace GameRaider
         {
             services.AddDbContext<GameRaiderContext>(opt => opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddSwaggerDocument();
+
 
         }
 
@@ -41,6 +43,8 @@ namespace GameRaider
 
             // app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
         }
     }
 }

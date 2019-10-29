@@ -17,7 +17,7 @@ namespace GameRaider.Models
             builder.Entity<Game>()
                 .HasData(
                     new Game { GameId = 1, Raiding = 5, Title = "Skyrim", Studio = "Bethesda", ReleaseDate = "2011" },
-                    new Game { GameId = 2, Raiding = 5, Title = "Red Dead Redemtion 2", Studio = "Rockstar", ReleaseDate = "2018" },
+                    new Game { GameId = 2, Raiding = 5, Title = "Red Dead Redemption 2", Studio = "Rockstar", ReleaseDate = "2018" },
                     new Game { GameId = 3, Raiding = 2, Title = "Wolfenstein Youngblood", Studio = "id Software", ReleaseDate = "2019" },
                     new Game { GameId = 4, Raiding = 4, Title = "Bloodborne", Studio = "FromSoftware", ReleaseDate = "2015" },
                     new Game { GameId = 5, Raiding = 3, Title = "Need for Speed Rivals", Studio = "Ghost Games", ReleaseDate = "2013" },
