@@ -11,6 +11,7 @@ namespace GameRaider.Models
         public string ReviewAuthor { get; set; }
         public string ReviewText { get; set; }
         public string PublishDate { get; set; }
+        public int Raiding { get; set; }
         public virtual Game Game { get; set; }
     }
 

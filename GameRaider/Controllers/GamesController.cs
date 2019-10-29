@@ -16,11 +16,7 @@ namespace GameRaider.Controllers
         {
             _db = db;
         }
-        // [HttpGet]
-        // public ActionResult<IEnumerable<Game>>Get()
-        // {
-        //     return _db.Games.ToList();
-        // }
+        
         [HttpPost]
         public void Post([FromBody] Game game)
         {
@@ -45,10 +41,9 @@ namespace GameRaider.Controllers
         {
             query = query.Where(entry => entry.Title == title);
         }
-        // if (raiding >= 4)
-        // {
+        if (raiding != 0)
             query = query.Where(entry => entry.Raiding >= raiding);
-        // }
+
 
         return query.ToList();
         }
